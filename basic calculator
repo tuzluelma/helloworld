@@ -1,0 +1,24 @@
+ /*printf("***HESAP MAKINESI ***\n");
+    int s1,s2,a;
+    char islem;
+    printf("1.sayiyi giriniz :");
+    scanf("%d",&s1);
+    
+    printf("islem turunu yaziniz : ");
+    scanf("%s",&islem);
+    
+    printf("2.sayiyi giriniz : ");
+    scanf("%d",&s2);
+    
+    switch(islem){
+    	case '+':a=s1+s2;
+    	printf("islem sonucu : %d",a); break;
+    	case '-':a=s1-s2;
+    	printf("islem sonucu : %d",a); break;
+    	case '*':a=s1*s2;
+    	printf("islem sonucu : %d",a); break;
+    	case '/':a=s1/s2;
+    	printf("islem sonucu : %d",a); break;
+    	default :printf("hatali islem yaptiniz !!"); 
+    	break;
+	}
