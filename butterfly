@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+   int kenar,a,c;
+   printf("kenar sayisinin giriniz : ");
+   scanf("%d",&kenar);
+   
+   for(a=1;a<=kenar;a++){
+   	for(c=1;c<=a;c++){
+   		printf("*");
+	   }
+	for(c=1;c<=(kenar*2)-(a*2);c++){
+		printf(" ");
+	}
+	for(c=1;c<=a;c++){
+		printf("*");
+	}
+	printf("\n");   
+   	
+   }
+   
+   for(a=kenar;a>=1;a--){
+   	for(c=1;c<=a;c++){
+   		printf("*");
+	   }
+	for(c=1;c<=(kenar*2)-(a*2);c++){
+		printf(" ");
+	}
+	for(c=1;c<=a;c++){
+		printf("*");
+	}
+	printf("\n");  
+   	
+   }
+   
+ 
+
+	return 0;
+}
