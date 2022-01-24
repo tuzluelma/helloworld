@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+   
+
+int main() { 
+      srand(time(NULL));
+	  int rasgele=(rand()%3)+1;
+	  system("color 4");
+	  int sayi;
+	  printf("Tas - Kagit - Makas oyununa hosgeldiniz ... \n\n");
+	  printf(" Tas   icin 1 \n Kagit icin 2 \n Makas icin 3 \n ");
+	  printf("lutfen seciminizi yapiniz : ");
+	  scanf("%d",&sayi);
+	  printf("\n");
+	  if(sayi==1){
+	  	if(rasgele==1){
+	  		printf("berabere \n\n");
+	  		printf("bilgisayarin sectigi secim : %d \n",rasgele);
+		  }else
+		  if(rasgele==2){
+		  	printf("kaybettiniz :( \n\n");
+		  	printf("bilgisayarin sectigi secim : %d\n",rasgele);
+		  }else
+		  if(rasgele==3){
+		  	printf("kazandiniz \n\n");
+		  	printf("bilgisayarin sectigi secim : %d\n",rasgele);
+		  }
+	  }else
+	  if(sayi==2){
+	        if(rasgele==1){
+	  		printf("kazandiniz \n\n");
+	  		printf("bilgisayarin sectigi secim : %d\n ",rasgele);
+		  }else
+		  if(rasgele==2){
+		  	printf("berabere \n\n");
+		  	printf("bilgisayarin sectigi secim : %d\n",rasgele);
+		  }else
+		  if(rasgele==3){
+		  	printf("kaybettiniz :( \n\n");
+		  	printf("bilgisayarin sectigi secim : %d\n",rasgele);
+		  }else
+		  
+		  if(sayi==3){
+		  	  if(rasgele==1){
+	  		printf("kaybettiniz :( \n\n");
+	  		printf("bilgisayarin sectigi secim : %d \n ",rasgele);
+		  }else
+		  if(rasgele==2){
+		    printf("kazandiniz \n\n");
+		  	printf("bilgisayarin sectigi secim : %d \n",rasgele);
+		  }else
+		  if(rasgele==3){
+		  	printf("berabere \n\n");
+		  	printf("bilgisayarin sectigi secim : %d\n",rasgele);
+		  }
+		  	
+		  }
+		
+	  }else{
+		  	printf("hatali degerini girdiniz !!!");
+		  }
+	  
+	  
+	return 0;
+}
